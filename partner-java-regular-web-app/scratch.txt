@@ -1,0 +1,65 @@
+auth0.domain
+auth0_issuer
+auth0_client_id
+auth0_client_secret
+auth0_audience
+auth0_connection
+scope
+auth0_signing_algorithm
+portal_login_url
+external_return_url
+callback_url
+logout_return_url
+
+
+        <div class="jumbotron">
+            <h3>Hello ${user.name}!</h3>
+            <p class="lead">Your nickname is: ${user.nickname}</p>
+            <p class="lead">Your user id is: ${user.userId}</p>
+            <p><img class="avatar" src="${user.picture}"/></p>
+        </div>
+
+
+<div class="w3-container">
+  <% if ((Boolean) request.getAttribute("isAuthenticated")) { %>
+    <h4>You are logged in!</h4>
+  <% } else { %>
+    <h4>You are not logged in! Please <a href="<%= request.getAttribute("baseUrl") + "/logout" %>">Log In</a> to continue.</h4>
+  <% } %>
+</div>
+
+
+Caused by: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target
+
+
+ public Auth0User getUserProfile(final Tokens tokens) {
+        Validate.notNull(tokens);
+        final String idToken = tokens.getIdToken();
+        final UserProfile userProfile = authenticationAPIClient.tokenInfo(idToken).execute();
+        return new Auth0User(userProfile);
+}
+
+
+openssl s_client -connect auth.demonstration.site:443 < /dev/null | sed -ne '/-BEGIN CERTIFICATE-/,/-END CERTIFICATE-/p' > public.crt
+
+
+        <dependency>
+            <groupId>com.auth0</groupId>
+            <artifactId>auth0-servlet</artifactId>
+            <version>3.4.0</version>
+        </dependency>
+
+
+LinkedHashMap
+
+
+
+Date date1=new SimpleDateFormat("dd/MM/yyyy-MM-ddTHH:mm:ss.Z").parse(sDate1);
+
+
+String createdAt = "2017-10-04T04:18:48.465Z";
+DateFormat format = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSS'Z'");
+format.parse(createdAt);
+
+
+javax.net.ssl.SSLHandshakeException: sun.security.validator.ValidatorException: PKIX path building failed: sun.security.provider.certpath.SunCertPathBuilderException: unable to find valid certification path to requested target

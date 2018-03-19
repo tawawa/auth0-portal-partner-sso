@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://java.sun.com/xml/ns/javaee
+    http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+    version="3.0">
+
+  <display-name>Auth0 Servlet Partner</display-name>
+
+  <!-- Servlets -->
+  <servlet>
+    <servlet-name>IndexController</servlet-name>
+    <servlet-class>com.auth0.example.IndexController</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>LoginController</servlet-name>
+    <servlet-class>com.auth0.example.LoginController</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>LogoutController</servlet-name>
+    <servlet-class>com.auth0.example.LogoutController</servlet-class>
+    <init-param>
+      <param-name>on_logout_redirect_to</param-name>
+      <param-value>/</param-value>
+    </init-param>
+  </servlet>
+  <servlet>
+    <servlet-name>UserController</servlet-name>
+    <servlet-class>com.auth0.example.UserController</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>CheckController</servlet-name>
+    <servlet-class>com.auth0.example.CheckController</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>AuthController</servlet-name>
+    <servlet-class>com.auth0.example.AuthController</servlet-class>
+  </servlet>
+  <servlet>
+    <servlet-name>CallbackController</servlet-name>
+    <servlet-class>com.auth0.Auth0CallbackHandler</servlet-class>
+    <init-param>
+      <param-name>auth0.redirect_on_success</param-name>
+      <param-value>/user</param-value>
+    </init-param>
+    <init-param>
+      <param-name>auth0.redirect_on_error</param-name>
+      <param-value>/logout</param-value>
+    </init-param>
+  </servlet>
+
+  <!-- Servlet Mappings -->
+  <servlet-mapping>
+    <servlet-name>IndexController</servlet-name>
+    <url-pattern>/</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LoginController</servlet-name>
+    <url-pattern>/login</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>LogoutController</servlet-name>
+    <url-pattern>/logout</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>UserController</servlet-name>
+    <url-pattern>/user</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CheckController</servlet-name>
+    <url-pattern>/check</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>AuthController</servlet-name>
+    <url-pattern>/auth</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CallbackController</servlet-name>
+    <url-pattern>/callback</url-pattern>
+  </servlet-mapping>
+
+  <!-- Filters -->
+  <filter>
+    <filter-name>AuthFilter</filter-name>
+    <filter-class>com.auth0.AuthFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>AuthFilter</filter-name>
+    <url-pattern>/user</url-pattern>
+  </filter-mapping>
+
+
+  <!-- Error Pages -->
+  <error-page>
+    <error-code>404</error-code>
+    <location>/</location>
+  </error-page>
+
+  <!-- Auth0 Configuration -->
+  <context-param>
+    <param-name>auth0.domain</param-name>
+    <param-value>auth.demonstration.site</param-value>
+  </context-param>
+
+  <context-param>
+    <param-name>auth0.exchange_domain</param-name>
+    <param-value>demonstration.auth0.com</param-value>
+  </context-param>
+
+  <context-param>
+    <param-name>auth0.issuer</param-name>
+    <param-value>https://auth.demonstration.site/</param-value>
+  </context-param>
+
+  <context-param>
+    <param-name>auth0.client_id</param-name>
+    <param-value>oL43JQyoR03YKa7d64LHIlD1nmG4kytI</param-value>
+  </context-param>
+
+  <context-param>
+    <param-name>auth0.client_secret</param-name>
+    <param-value>{{SECRET}}</param-value>
+  </context-param>
+
+  <context-param>
+    <param-name>auth0.audience</param-name>
+    <param-value>https://demonstration.auth0.com/userinfo</param-value>
+  </context-param>
+
+  <context-param>
+    <param-name>auth0.connection</param-name>
+    <param-value>Username-Password-Authentication</param-value>
+  </context-param>
+
+  <context-param>
+    <param-name>auth0.scope</param-name>
+    <param-value>openid profile email</param-value>
+  </context-param>
+
+  <context-param>
+    <param-name>auth0.signing_algorithm</param-name>
+    <param-value>HS256</param-value>
+  </context-param>
+
+  <context-param>
+    <param-name>auth0.base64_encoded_secret</param-name>
+    <param-value>false</param-value>
+  </context-param>
+
+  <!-- App Configuration -->
+  <context-param>
+    <param-name>portal_login_url</param-name>
+    <param-value>http://app1.demonstration.site:3000/auth</param-value>
+  </context-param>
+
+  <context-param>
+    <param-name>partner_login_endpoint</param-name>
+    <param-value>http://app2.demonstration.site:3001/login</param-value>
+  </context-param>
+
+  <context-param>
+    <param-name>external_return_url</param-name>
+    <param-value>http://app2.demonstration.site:3001/auth</param-value>
+  </context-param>
+
+  <context-param>
+    <param-name>callback_url</param-name>
+    <param-value>http://app2.demonstration.site:3001/callback</param-value>
+  </context-param>
+
+  <context-param>
+    <param-name>logout_return_url</param-name>
+    <param-value>http://app2.demonstration.site:3001/</param-value>
+  </context-param>
+
+  <context-param>
+    <param-name>log4jConfiguration</param-name>
+    <param-value>log4j2.xml</param-value>
+  </context-param>
+
+</web-app>

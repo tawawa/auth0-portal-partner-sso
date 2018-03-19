@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<classpath>
+  <classpathentry kind="src" path="src/main/java" including="**/*.java"/>
+  <classpathentry kind="src" path="src/main/resources" excluding="**/*.java"/>
+  <classpathentry kind="output" path="target/classes"/>
+  <classpathentry kind="var" path="M2_REPO/javax/servlet/javax.servlet-api/3.0.1/javax.servlet-api-3.0.1.jar" sourcepath="M2_REPO/javax/servlet/javax.servlet-api/3.0.1/javax.servlet-api-3.0.1-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/Users/arcseldon/.m2/repository/javax/servlet/javax.servlet-api/3.0.1/javax.servlet-api-3.0.1-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/javax/servlet/jstl/1.1.2/jstl-1.1.2.jar" sourcepath="M2_REPO/javax/servlet/jstl/1.1.2/jstl-1.1.2-sources.jar"/>
+  <classpathentry kind="con" path="org.eclipse.jdt.launching.JRE_CONTAINER/org.eclipse.jdt.internal.debug.ui.launcher.StandardVMType/JavaSE-1.8"/>
+  <classpathentry kind="var" path="M2_REPO/taglibs/standard/1.1.2/standard-1.1.2.jar" sourcepath="M2_REPO/taglibs/standard/1.1.2/standard-1.1.2-sources.jar"/>
+  <classpathentry kind="var" path="M2_REPO/com/auth0/auth0-servlet/3.4.0/auth0-servlet-3.4.0.jar" sourcepath="M2_REPO/com/auth0/auth0-servlet/3.4.0/auth0-servlet-3.4.0-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/Users/arcseldon/.m2/repository/com/auth0/auth0-servlet/3.4.0/auth0-servlet-3.4.0-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/com/auth0/mvc-auth-commons/0.1.2/mvc-auth-commons-0.1.2.jar" sourcepath="M2_REPO/com/auth0/mvc-auth-commons/0.1.2/mvc-auth-commons-0.1.2-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/Users/arcseldon/.m2/repository/com/auth0/mvc-auth-commons/0.1.2/mvc-auth-commons-0.1.2-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/com/auth0/auth0/0.4.0/auth0-0.4.0.jar" sourcepath="M2_REPO/com/auth0/auth0/0.4.0/auth0-0.4.0-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/Users/arcseldon/.m2/repository/com/auth0/auth0/0.4.0/auth0-0.4.0-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/com/google/code/gson/gson/2.6.2/gson-2.6.2.jar" sourcepath="M2_REPO/com/google/code/gson/gson/2.6.2/gson-2.6.2-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/Users/arcseldon/.m2/repository/com/google/code/gson/gson/2.6.2/gson-2.6.2-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/com/squareup/okhttp/okhttp/2.5.0/okhttp-2.5.0.jar" sourcepath="M2_REPO/com/squareup/okhttp/okhttp/2.5.0/okhttp-2.5.0-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/Users/arcseldon/.m2/repository/com/squareup/okhttp/okhttp/2.5.0/okhttp-2.5.0-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/com/squareup/okio/okio/1.6.0/okio-1.6.0.jar" sourcepath="M2_REPO/com/squareup/okio/okio/1.6.0/okio-1.6.0-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/Users/arcseldon/.m2/repository/com/squareup/okio/okio/1.6.0/okio-1.6.0-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/com/auth0/java-jwt/2.2.1/java-jwt-2.2.1.jar" sourcepath="M2_REPO/com/auth0/java-jwt/2.2.1/java-jwt-2.2.1-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/Users/arcseldon/.m2/repository/com/auth0/java-jwt/2.2.1/java-jwt-2.2.1-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/org/apache/commons/commons-lang3/3.3.2/commons-lang3-3.3.2.jar" sourcepath="M2_REPO/org/apache/commons/commons-lang3/3.3.2/commons-lang3-3.3.2-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/Users/arcseldon/.m2/repository/org/apache/commons/commons-lang3/3.3.2/commons-lang3-3.3.2-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/org/apache/httpcomponents/httpclient/4.5/httpclient-4.5.jar" sourcepath="M2_REPO/org/apache/httpcomponents/httpclient/4.5/httpclient-4.5-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/Users/arcseldon/.m2/repository/org/apache/httpcomponents/httpclient/4.5/httpclient-4.5-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/org/apache/httpcomponents/httpcore/4.4.1/httpcore-4.4.1.jar" sourcepath="M2_REPO/org/apache/httpcomponents/httpcore/4.4.1/httpcore-4.4.1-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/Users/arcseldon/.m2/repository/org/apache/httpcomponents/httpcore/4.4.1/httpcore-4.4.1-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/commons-logging/commons-logging/1.2/commons-logging-1.2.jar" sourcepath="M2_REPO/commons-logging/commons-logging/1.2/commons-logging-1.2-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/Users/arcseldon/.m2/repository/commons-logging/commons-logging/1.2/commons-logging-1.2-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/commons-codec/commons-codec/1.4/commons-codec-1.4.jar" sourcepath="M2_REPO/commons-codec/commons-codec/1.4/commons-codec-1.4-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/Users/arcseldon/.m2/repository/commons-codec/commons-codec/1.4/commons-codec-1.4-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/org/apache/logging/log4j/log4j-api/2.5/log4j-api-2.5.jar" sourcepath="M2_REPO/org/apache/logging/log4j/log4j-api/2.5/log4j-api-2.5-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/Users/arcseldon/.m2/repository/org/apache/logging/log4j/log4j-api/2.5/log4j-api-2.5-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+  <classpathentry kind="var" path="M2_REPO/org/apache/logging/log4j/log4j-core/2.5/log4j-core-2.5.jar" sourcepath="M2_REPO/org/apache/logging/log4j/log4j-core/2.5/log4j-core-2.5-sources.jar">
+    <attributes>
+      <attribute value="jar:file:/Users/arcseldon/.m2/repository/org/apache/logging/log4j/log4j-core/2.5/log4j-core-2.5-javadoc.jar!/" name="javadoc_location"/>
+    </attributes>
+  </classpathentry>
+</classpath>

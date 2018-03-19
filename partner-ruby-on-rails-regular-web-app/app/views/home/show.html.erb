@@ -1,0 +1,7 @@
+<section class="text-center">
+  <% if session[:userinfo] %>
+    <h4>You are logged in!</h4>
+  <% else %>
+    <h4>You are not logged in! Please <a href="/login"> Log In</a> to continue.</h4>
+  <% end %>
+</section>

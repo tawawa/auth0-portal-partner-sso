@@ -1,0 +1,20 @@
+<section class="text-center">
+  <img class="jumbo-thumbnail" src="<%= @user[:info][:image] %>"/>
+  <h4>Welcome, <%= @user[:info][:name] %></h4>
+   <div>
+     <button id="check-session">Check Session</button>
+   </div>
+</section>
+
+<script>
+    $('#check-session').on('click', function(e) {
+      e.preventDefault();
+      checkSession();
+    });
+    function checkSession() {
+      window.location = '/check';
+    }
+    //- setInterval(function() {
+      //- checkSession();
+    //- }, 5000);
+</script>

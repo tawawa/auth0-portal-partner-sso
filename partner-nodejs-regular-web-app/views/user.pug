@@ -1,0 +1,22 @@
+extends layout
+
+block content
+  br
+  .w3-container
+    .w3-card-4.w3-center(style="padding: 15px;")
+      img(src=user.picture)
+      p Welcome #{user.nickname}
+      div
+        button(id="check-session") Check Session
+
+  script.
+    $('#check-session').on('click', function(e) {
+      e.preventDefault();
+      checkSession();
+    });
+    function checkSession() {
+      window.location = '#{env.SESSION_URL}';
+    }
+    //- setInterval(function() {
+      //- checkSession();
+    //- }, 5000);
