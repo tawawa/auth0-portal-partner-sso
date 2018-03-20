@@ -1,0 +1,10 @@
+<section class="text-center">
+  <img *ngIf='userInfo' class="jumbo-thumbnail" src="{{userInfo.picture}}"/>
+  <h4 *ngIf='userInfo'> Welcome, {{userInfo.name}}</h4>
+   <div>
+     <button (click)='auth.checkSession()'>
+       Check Session
+     </button>
+
+   </div>
+</section>
