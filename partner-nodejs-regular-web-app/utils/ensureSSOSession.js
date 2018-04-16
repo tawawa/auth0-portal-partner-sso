@@ -1,4 +1,4 @@
-const authorize = require('../utils/authorize');
+const authorize = require('./authorize');
 
 /* middleware to ensure access token is valid - refresh if expired */
 function ensureSSOSession (req, res, next) {
