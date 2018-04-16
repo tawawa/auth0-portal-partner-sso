@@ -1,6 +1,5 @@
 const authorize = require('./authorize');
 
-/* middleware to ensure access token is valid - refresh if expired */
 function ensureSSOSession (req, res, next) {
   const ssoChecked = req.session.ssoChecked;
   if (ssoChecked === true) {
