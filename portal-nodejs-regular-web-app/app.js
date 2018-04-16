@@ -32,6 +32,7 @@ const strategy = new Auth0Strategy({
   req.session.id_token = extraParams.id_token;
   req.session.profile = profile;
 
+  req.session.ssoChecked = true;
   return done(null, profile);
 });
 
